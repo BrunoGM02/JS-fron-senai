@@ -1,0 +1,174 @@
+body{
+    background-color: darkblue;
+}
+
+.cadastro-form{
+    background-color: aliceblue;
+    width: 80vw;
+    margin: 10vh auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.titulo{
+    background-color: darkslateblue;
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 5px black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: sans-serif;
+}
+
+.subtitulo{
+    display: flex;
+    color: dodgerblue;
+    justify-content: space-between;
+    padding: 2vw;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+.botao{
+    color: dodgerblue;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    border: 1px solid dodgerblue;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.botao:hover{
+    background-color: dodgerblue;
+    color: black;
+}
+
+.conteiner-modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000090;
+/*    DEIXAR ELA FIXA*/
+    position: fixed;
+/*    FAZER A MODAL SUBIR TUDO*/
+    top: 0px;
+    left: 0;
+/*    COLOCAR A MODAL ATRAS DE TUDO*/
+    z-index: -10;
+/*    FAZER ELE FICAR INVISIVEL*/
+    opacity: 0;
+}
+
+/************DANDO FORMA POR DENTRO DA MODAL**************/
+.modal{
+    width: 50vw;
+    margin: 10vh auto;
+    background-color: darkslateblue;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.form{
+    display: grid;
+    grid-template-areas:
+        "nome nome nome nome"
+        "email email celular celular"
+        "endereco endereco numero bairro "
+        "cidade cidade estado cep";
+    gap: 10px;
+    padding: 2vw;
+}
+
+#nome {grid-area: nome;}
+#email {grid-area: email;}
+#celular {grid-area: celular;}
+#endereco {grid-area: endereco;}
+#numero {grid-area: numero;}
+#cidade {grid-area: cidade;}
+#estado {grid-area: estado;}
+#cep {grid-area: cep;}
+
+.form > input{
+    width: 100%;
+}
+
+
+
+.conteiner-modal.exibirModal{
+/*    FAZ A MODAL FICAR VISIVEL NOVAMENTE*/
+    opacity: 1;
+/*    FAZ A MODAL APARECER NA FRENTE DE TUDO*/
+    z-index: 999;
+}
+
+.acao{
+    display: flex;
+    justify-content: center;
+}
+
+.botao{
+    font: bold;
+    font-size: 15px;
+    margin: 1vw;
+}
+
+
+.tabela{
+    width: 100%;
+    background-color: darkslateblue;
+    border-radius: 5px; 
+}
+
+th{
+   
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+}
+
+td{
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    font: 15px; 
+}
+
+.registros tr{
+    background-color: dodgerblue;
+}
+
+.registros tr:hover{
+    background-color: darkgray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
